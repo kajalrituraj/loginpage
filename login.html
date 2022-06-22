@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            background-image: url("blue-linear-gradient-purple-1920x1080-c2-00bfff-ba55d3-a-135-f-14.png");
+
+        }
+
+        .pass {
+            display: flex;
+            width: 21.5vw;
+            justify-content: space-between;
+            font-size: 13px;
+        }
+
+        label {
+            font-size: 16px;
+        }
+
+        .main {
+            display: flex;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: 90vh;
+            width: 70vw;
+            /* background-color: rgba(248, 246, 246, 0.925); */
+            background-color: #ffffff;
+            box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+            filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+        }
+
+
+        input[type=email],
+        input[type=password] {
+            padding: 7px;
+            padding-bottom: 3px;
+            color: black;
+            width: 20vw;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .check {
+            padding: 7px;
+            padding-bottom: 3px;
+            width: 20vw;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+
+        input[type="submit"] {
+            height: 40px;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            width: 21vw;
+            cursor: pointer;
+            background-color: #893efe;
+        }
+
+        #grad1 {
+            display: flex;
+            width: 45vw;
+            background-color: white;
+        }
+
+        a {
+            color: #893efe;
+        }
+
+        .image-container {
+            width: 50vw;
+            background-color: transparent;
+            background-image: url("rev.svg");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .divider {
+            display: flex;
+            width: 30vw;
+            padding-top: 15px;
+            padding-bottom: 10px;
+        }
+
+        .left-line {
+            width: 6vw;
+            position: relative;
+        }
+
+        .right-line {
+            width: 6vw;
+            position: relative;
+        }
+
+        .in-div {
+            height: 2px;
+            width: 6.7vw;
+            position: absolute;
+            top: 50%;
+            background-color: rgb(160, 160, 160);
+            margin-top: 3px;
+        }
+
+        .text-line {
+            color: rgb(160, 160, 160);
+            padding: 0px 10px;
+            margin-top: 3px;
+        }
+
+        .btn__container {
+            margin-top: 18px;
+            width: 21vw;
+            height: 47px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .btn {
+            border: 1px solid red;
+            border-radius: 6px;
+            color: red;
+            width: 10vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .btn-f {
+            border: 1px solid blue;
+            border-radius: 6px;
+            width: 10vw;
+            color: blue;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            align-items: center;
+        }
+
+        .fa-google {
+            background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .sub-heading p {
+            color: rgb(117, 101, 101);
+            margin: 0;
+            padding: 0;
+            padding-bottom: 20px;
+        }
+
+        .sub-heading a {
+            font-size: 14px;
+        }
+
+        .heading h2 {
+            margin: 0px;
+            padding: 0px;
+            padding-top: 40px;
+        }
+
+        .form {
+            padding-left: 30px;
+            height: 80vh;
+            width: 25vw;
+            background-color: white;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 5px 15px 10px 1px rgba(0, 0, 0, 0.1);
+            /* filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3)); */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div id="grad1">
+            <div class="form">
+                <div class="heading">
+                    <h2>Login</h2>
+                </div>
+                <div class="sub-heading">
+                    <p>Doesn't have an account yet? <a href="">Sign Up</a></p>
+                </div>
+                <div class="form-content">
+                    <form class="hlo">
+                        <label for="fname">Email Address</label><br />
+                        <input type="email" placeholder="you@example.com" id="mail" name="email" /><br />
+                        <div class="pass">
+                            <label for="Password">Password</label>
+                            <a href="#forgot-pw" class="forgot-pw">Forgot Password?</a>
+                        </div>
+                        <input type="password" placeholder="Enter 6 character or more" id="pass" name="password" /><br>
+                        <div class="check">
+                            <input type="checkbox" value="haklwiq" id="rememberme">
+                            <label for="rememberme">Remember me</label>
+                        </div>
+                        <div class="submit"><input type="submit" value="Login" /></div>
+
+                        <div class="divider">
+                            <div class="left-line">
+                                <div class="in-div"></div>
+                            </div>
+
+                            <div class="text-line"> or login with</div>
+
+                            <div class="right-line">
+                                <div class="in-div"></div>
+                            </div>
+                        </div>
+                        <div class="btn__container">
+
+
+                            <div class="btn">
+                                <span>
+                                    <i class="fa fa-google"></i>
+                                    Google
+                                </span>
+                            </div>
+                            <div class="btn-f">
+                                <span>
+                                    <i class="fa fa-facebook"></i>
+                                    Facebook
+                                </span>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+        </div>
+    </div>
+</body>
+
+</html>
